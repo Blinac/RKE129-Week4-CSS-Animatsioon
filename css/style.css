@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+body {
+    background-color: rgb(223, 179, 123);
+} 
+
+.main div {
+    color: brown;
+    font-family: "Signika", system-ui;
+}
+
+.heading {
+    color: brown;
+    text-align: center;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 5rem;
+    animation: heading;
+	animation-duration: 10s;
+    position: relative;
+} 
+
+@keyframes heading {
+	0% {top: -250px;}
+	100%{top: 0px;}
+}
+
+
+.pilt {
+    border: 3px solid brown;
+    width:"150px";
+    margin: 1rem auto;
+    border-radius: 30%;
+    animation: zoomIn 10s ease-out;
+} 
+
+@keyframes zoomIn {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+.tabel {
+    text-align: center;
+    position: relative;
+	animation: tabel;
+	animation-duration: 10s;
+	animation-timing-function: ease-in-out;
+} 
+
+@keyframes tabel {
+	0% {left: -1000px;}
+	100% {left: 0;}
+}
+
+.footer {
+    font-family: "Signika", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
